@@ -1,0 +1,58 @@
+@import "../rem/common.css";
+@import "../normalize.css";
+.loginImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.6rem;
+}
+.loginImg img {
+  width: 3rem;
+  height: 3rem;
+}
+.loginBorder {
+  position: relative;
+  width: 80%;
+  margin: 2rem auto;
+}
+.loginBorder input {
+  position: relative;
+  width: 100%;
+  display: block;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid gray;
+  padding: 0.8rem 0;
+  margin-bottom: 0.2rem;
+  font: 800 0.6rem Arial;
+  background-color: transparent;
+}
+.loginBorder img {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 3.3rem;
+  right: 1rem;
+}
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.btns .btn {
+  width: 3.6rem;
+  height: 2rem;
+  border-radius: 1rem;
+  outline: none;
+  border: 0;
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 0.6rem;
+  box-shadow: 0.1rem 0.1rem 0.3rem #666;
+}
+.btns :nth-child(1) {
+  background-color: #f4ca1c;
+}
+.btns :nth-child(2) {
+  background-color: #595bb3;
+}

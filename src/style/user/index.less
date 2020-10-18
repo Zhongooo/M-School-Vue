@@ -1,0 +1,71 @@
+@import "../rem/common.less";
+@import "../normalize.css";
+
+.userbg {
+    position: relative;
+    height: 6.6rem;
+    background-color: #f4ca1c;
+    .userTop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 2.5rem;
+        .avatar {
+            margin-left: 1rem;
+            
+            img {
+                width: 3.2rem;
+                height: 3.2rem;
+                border-radius: 50%;
+            }
+        }
+        .userName {
+            flex: 1;
+            text-indent: 0.6rem;
+            :nth-child(1) {
+                font-size: 0.8rem;
+                color: #1c2d66;
+                font-weight: 600;
+            }
+            :nth-child(2) {
+                font-size: 0.6rem;
+                color: aliceblue;
+                margin-top: 0.2rem;
+            }
+        }
+        .msgBtn {
+            flex: 1;
+            margin-left: 0.5rem;
+            button {
+                width: 4.6rem;
+                height: 1.5rem;
+                background-color: black;
+                color: aliceblue;
+                font-size: 0.6rem;
+                opacity: 0.6;
+                border: 0;
+                border-radius: 1rem;
+            }
+        }
+    } 
+}
+// 宫格
+.userMid{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    height: 3.7rem;
+    .midpart {
+        text-align: center;
+        img {  
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+        p {
+            font-size: 0.6rem;
+        }
+        
+    }
+}
