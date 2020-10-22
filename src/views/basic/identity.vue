@@ -5,11 +5,11 @@
 		<div class="choose w">
 			<div class="content" @click="tReg">
 				<p>我是教师</p>
-				<img src="../assets/image/teacher.png">
+				<img src="../../assets/image/teacher.png">
 			</div>
 			<div class="content" @click="pReg">
 				<p>我是家长</p>
-				<img src="../assets/image/parent.png" style="width: 2.8rem;height: 3rem;">
+				<img src="../../assets/image/parent.png" style="width: 2.8rem;height: 3rem;">
 			</div>
 		</div>
 		<!-- 确定按钮 -->
@@ -37,8 +37,8 @@
 </script>
 
 <style lang="less" scoped>
-	@import "../style/rem/common.css";
-	@import "../style/normalize.css";
+	@import "../../style/rem/common.css";
+	@import "../../style/normalize.css";
 
 	.identity {
 		position: relative;

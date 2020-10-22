@@ -1,7 +1,7 @@
 <template>
 	<div class="login">
 		<div class="loginImg w">
-			<img src="../assets/image/register3.png">
+			<img src="../../assets/image/register3.png">
 		</div>
 		<div class="loginBorder">
 			<input type="text" placeholder="USERNAME" v-focus>
@@ -20,15 +20,15 @@
 		name: 'login',
 		data() {
 			return {
-				src: require('../assets/icon/close.png'),
+				src: require('../../assets/icon/close.png'),
 				type: 'password'
 			}
 		},
 		methods: {
 			openeyes() {
 				this.type=this.type === 'password'?'text':'password';
-				this.src=this.src===require('../assets/icon/close.png')?require('../assets/icon/open.png')
-				:require('../assets/icon/close.png');
+				this.src=this.src===require('../../assets/icon/close.png')?require('../../assets/icon/open.png')
+				:require('../../assets/icon/close.png');
 			},
 			jumpToreg() {
 				this.$router.push('/identity');
@@ -38,5 +38,5 @@
 </script>
 
 <style lang="less" scoped>
-	@import "../style/basics/login.css";
+	@import "../../style/basics/login.css";
 </style>

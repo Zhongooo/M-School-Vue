@@ -8,7 +8,7 @@
 			<midHeader left="功能"></midHeader>
 			<div class="toolImg">
 				<div class="imgs" v-for="(item,index) in toolList" :key="item.id">
-					<img :src="require(`../assets/icon/${item.img}`)">{{item.name}}
+					<img :src="require(`../../assets/icon/${item.img}`)">{{item.name}}
 				</div>
 			</div>
 		</div>
@@ -18,7 +18,7 @@
 			<div class="news w">
 				<div class="newsContent" v-for="(item,index) in newsList" :key="item.id">
 					<div class="newsImg">
-						<img v-lazy="require(`../assets/newsImg/${item.img}`)" />
+						<img v-lazy="require(`../../assets/newsImg/${item.img}`)" />
 					</div>
 					<!-- 不要超过十个字 -->
 					<h6 style="font-size: 0.6rem;margin: 0.4rem 0;">{{item.title}}</h6>
@@ -35,11 +35,11 @@
 </template>
 
 <script>
-	import tabbar from '../components/Tabbar';
-	import myheader from '../components/Header.vue';
-	import midHeader from '../components/midHeader.vue';
-	import swiper from '../components/swiper.vue';
-	import datas from '../../common/js/datas.js';
+	import tabbar from '../../components/Tabbar';
+	import myheader from '../../components/Header.vue';
+	import midHeader from '../../components/midHeader.vue';
+	import swiper from '../../components/swiper.vue';
+	import datas from '../../../common/js/datas.js';
 	export default {
 		name: 'home',
 		components: {
@@ -63,7 +63,7 @@
 	}
 </script>
 <style lang="less" scoped>
-	@import "../style/user/index.css";
+	@import "../../style/user/index.css";
 
 	.tool {
 

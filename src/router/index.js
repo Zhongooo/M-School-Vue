@@ -7,42 +7,42 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import('../views/Home.vue')
+    component: () => import('../views/home/Home.vue')
   },
   {
     path: '/user',
     name: 'user',
-    component: () => import('../views/User.vue')
+    component: () => import('../views/user/User.vue')
   },
   {
     path: '/myclass',
     name: 'myclass',
-    component: () => import('../views/Class.vue')
+    component: () => import('../views/class/Class.vue')
   },
   {
     path: '/chat',
     name: 'chat',
-    component: () => import('../views/Chat.vue')
+    component: () => import('../views/chat/Chat.vue')
   },
   {
     path: '/login',
     name: 'login',
-    component: () => import('../secondaryViews/Login.vue')
+    component: () => import('../views/basic/Login.vue')
   },
   {
     path: '/register/:identity',
     name: 'register',
-    component: () => import('../secondaryViews/register.vue')
+    component: () => import('../views/basic/register.vue')
   },
   {
     path: '/identity',
     name: 'identity',
-    component: () => import('../secondaryViews/identity.vue')
+    component: () => import('../views/basic/identity.vue')
   },
   {
     path: '/chat/chatroom',
     name: 'chatroom',
-    component: () => import('../secondaryViews/chatroom.vue')
+    component: () => import('../views/chat/chatroom.vue')
   }
 ]
 

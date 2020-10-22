@@ -3,15 +3,15 @@
 		<myheader left="班级"></myheader>
 		<div class="classTop w">
 			<div class="search">
-				<img src="../assets/icon/搜索.png">
+				<img src="../../assets/icon/搜索.png">
 				<span>搜索班级</span>
 			</div>
 			<div class="classicon w">
 				<div class="addClass">
-					<img src="../assets/icon/添加.png">添加班级
+					<img src="../../assets/icon/添加.png">添加班级
 				</div>
 				<div class="addClass">
-					<img src="../assets/icon/编辑.png">创建班级
+					<img src="../../assets/icon/编辑.png">创建班级
 				</div>
 			</div>
 		</div>
@@ -21,8 +21,8 @@
 </template>
 
 <script>
-	import tabbar from '../components/Tabbar.vue';
-	import myheader from '../components/Header.vue';
+	import tabbar from '../../components/Tabbar.vue';
+	import myheader from '../../components/Header.vue';
 	export default {
 		name: 'myclass',
 		components: {
@@ -33,7 +33,7 @@
 </script>
 
 <style lang="less" scoped>
-	@import "../style/user/index.css";
+	@import "../../style/user/index.css";
 	.classTop {
 		position: relative;
 		height: 6.4rem;

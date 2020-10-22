@@ -4,7 +4,7 @@
         <div class="userbg w">
             <div class="userTop w">
                 <div class="avatar">
-                    <img src="../assets/image/pic1.jpg">
+                    <img src="../../assets/image/pic1.jpg">
                 </div>
                 <div class="userName">
                     <p>钟老师</p>
@@ -49,7 +49,7 @@
 </template>
 
 <script>
-	import tabbar from '../components/Tabbar';
+	import tabbar from '../../components/Tabbar';
     import Vue from 'vue';
     import { Cell, CellGroup, Switch, Button } from 'vant';
     Vue.use(Cell).use(CellGroup).use(Switch).use(Button);
@@ -64,22 +64,22 @@
                 images: [
                     {
                         id: 1,
-                        pic: require('../assets/icon/表情.png'),
+                        pic: require('../../assets/icon/表情.png'),
                         val: '孩子'
                     },
                     {
                         id: 2,
-                        pic: require('../assets/icon/喜欢.png'),
+                        pic: require('../../assets/icon/喜欢.png'),
                         val: '收藏夹'
                     },
                     {
                         id: 3,
-                        pic: require('../assets/icon/云盘.png'),
+                        pic: require('../../assets/icon/云盘.png'),
                         val: '云盘'
                     },
                     {
                         id: 4,
-                        pic: require('../assets/icon/解释.png'),
+                        pic: require('../../assets/icon/解释.png'),
                         val: '常见问题'
                     }
                 ]
@@ -89,5 +89,5 @@
     };
 </script>
 <style>
-    @import "../style/user/index.css";
+    @import "../../style/user/index.css";
 </style>

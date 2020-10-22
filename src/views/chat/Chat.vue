@@ -4,7 +4,7 @@
 		<div class="chatchat">
 			<div class="friends w" v-for="(item,index) in friends" :key="item.id"  @click="jump">
 				<div class="pic">
-					<img :src="require(`../assets/image/${item.imgUrl}`)"></img>
+					<img :src="require(`../../assets/image/${item.imgUrl}`)"></img>
 					<i>6</i>
 				</div>
 				<div class="main">
@@ -24,10 +24,10 @@
 </template>
 
 <script>
-	import tabbar from '../components/Tabbar.vue';
-	import myheader from '../components/Header.vue';
-	import datas from '../../common/js/datas.js'
-	import momentDate from '../../common/js/myTime.js'
+	import tabbar from '../../components/Tabbar.vue';
+	import myheader from '../../components/Header.vue';
+	import datas from '../../../common/js/datas.js'
+	import momentDate from '../../../common/js/myTime.js'
 	export default {
 		name: 'chat',
 		components: {
@@ -54,7 +54,7 @@
 </script>
 
 <style lang="less" scoped>
-	@import "../style/user/index.css";
+	@import "../../style/user/index.css";
 	.chatchat {
 		margin-top: 2.1rem;
 	}
