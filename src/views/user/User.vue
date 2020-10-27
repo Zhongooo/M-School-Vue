@@ -64,7 +64,7 @@
                 images: [
                     {
                         id: 1,
-                        pic: require('../../assets/icon/表情.png'),
+                        pic: require('../../assets/icon/smile.png'),
                         val: '孩子'
                     },
                     {

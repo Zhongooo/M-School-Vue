@@ -8,7 +8,7 @@
 			{{middle}}
 		</div>
 		<div class="right" @click="jump">{{right}}</div>
-		<div class="jumpto" v-show="jumpto">{{jumpmsg}}</div>
+		<div class="jumpto" v-show="jumpto" @click="backto">{{jumpmsg}}</div>
 	</div>
 </template>
 
@@ -25,12 +25,14 @@
 			jump() {
 				if(this.right==='登录'){
 					this.$router.push('/login')
+				}else if(this.right==='确定') {
+					this.$router.go(-1);
 				}
 				return;
 			},
 			backto() {
 				this.$router.go(-1);
-			}
+			},
 		}
     };
 </script>

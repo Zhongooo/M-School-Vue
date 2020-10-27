@@ -163,5 +163,13 @@ export default {
 
 		];
 		return info;
+	},
+	options:function() {
+		let options=[
+			{name:'1',myclass:'六年一班'},
+			{name:'2',myclass:'六年三班'},
+			{name:'3',myclass:'六年五班'},
+		];
+		return options;
 	}
 }
