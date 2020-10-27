@@ -8,7 +8,7 @@
 			<midHeader left="功能"></midHeader>
 			<div class="toolImg">
 				<div class="imgs" v-for="(item,index) in toolList" :key="item.id">
-					<img :src="require(`../../assets/icon/${item.img}`)">{{item.name}}
+					<img :src="require(`../../assets/icon/${item.img}`)" @click="jump(item.img)">{{item.name}}
 				</div>
 			</div>
 		</div>
@@ -53,6 +53,13 @@
 				toolList: [],
 				imgList: [],
 				newsList: []
+			}
+		},
+		methods:{
+			jump(target) {
+				var tar=target.substring(0,target.length-4);
+				console.log(tar)
+				this.$router.push(`/home/${tar}`)
 			}
 		},
 		created() {
