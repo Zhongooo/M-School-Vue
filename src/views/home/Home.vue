@@ -59,7 +59,7 @@
 			jump(target) {
 				var tar=target.substring(0,target.length-4);
 				console.log(tar)
-				this.$router.push(`/home/${tar}`)
+				this.$router.push(`/${tar}/list`)
 			}
 		},
 		created() {

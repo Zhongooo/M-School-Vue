@@ -9,9 +9,9 @@
 			</div>
 		</div>
 		<!-- 通知标题 -->
-		<input type="text" v-model="title" placeholder="请输入标题" v-focus class="title"></input>
+		<input type="text" placeholder="请输入标题" v-focus class="title"></input>
 		<!-- 通知内容 -->
-		<textarea class="content" v-model="content" placeholder="请输入要发布的内容,别发太多,看完(◎﹏◎)"></textarea>
+		<textarea class="content" placeholder="请输入要发布的内容,别发太多,看完(◎﹏◎)"></textarea>
 	</div>
 </template>
 
@@ -21,8 +21,7 @@
 		name: 'issue',
 		data() {
 			return {
-				title:'',
-				content:''
+				
 			}
 		},
 		components: {
@@ -30,7 +29,7 @@
 		},
 		methods: {
 			jump() {
-				this.$router.push('/home/checkclass');
+				this.$router.push('/info/checkclass');
 			}
 		}
 	}
@@ -78,7 +77,7 @@
 	}
 	.content {
 		width: 13rem;
-		height: 20rem;
+		min-height: 20rem;
 		padding: 0.5rem 1rem;
 		border: 0;
 		font-size: 0.6rem;

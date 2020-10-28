@@ -59,7 +59,7 @@ export default {
 			},
 			{
 				id: 5,
-				img: '审批.png',
+				img: 'leave.png',
 				name: '请假'
 			},
 			{
@@ -117,6 +117,7 @@ export default {
 		]
 		return news;
 	},
+	//我是作业
 	info: function() {
 		let info = [{
 				id: 1,
@@ -164,6 +165,7 @@ export default {
 		];
 		return info;
 	},
+	//我是班级选择
 	options:function() {
 		let options=[
 			{name:'1',myclass:'六年一班'},
@@ -171,5 +173,55 @@ export default {
 			{name:'3',myclass:'六年五班'},
 		];
 		return options;
-	}
+	},
+	//我来了我是班级列表~~
+	classList:function() {
+		let list=[
+			{img:'class02.png',type:'add',myclass:'辅导小猫三年二班',classNum:666,numbers:166},
+			{img:'class03.png',type:'enjoy',myclass:'辅导小猫六年一班',classNum:886,numbers:233},
+			{img:'class01.png',type:'add',myclass:'辅导小猫六年六班',classNum:123,numbers:233},
+		];
+		return list;
+	},
+	//我是作业
+	homework: function() {
+		let list = [{
+				id: 1,
+				title: '10月27日的通知',
+				homework: '大家要好好吃饭，多吃一点饭',
+				myclass: '六年五班',
+				time: '2020-10-27'
+			},
+			{
+				id: 2,
+				title: '10月28日的通知',
+				homework: '完成几个页面样式虽然很困😴',
+				myclass: '三年六班',
+				time: '2020-10-28'
+			},
+			{
+				id: 3,
+				title: '10月29日的通知',
+				homework: '交个人周报',
+				myclass: '六年五班',
+				time: '2020-10-27'
+			},
+			{
+				id: 4,
+				title: '11月06日的通知',
+				homework: '交项目源码',
+				myclass: '六年五班',
+				time: '2020-11-06'
+			},
+			{
+				id: 5,
+				title: '11月07日的通知',
+				homework: '没了！准备做毕设吧！加油！',
+				myclass: '六年五班',
+				time: '2020-11-07'
+			}
+	
+		];
+		return list;
+	},
 }

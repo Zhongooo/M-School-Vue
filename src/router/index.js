@@ -10,19 +10,24 @@ const routes = [
     component: () => import('../views/home/Home.vue')
   },
   {
-    path: '/home/info',
+    path: '/info/list',
     name: 'info',
-    component: () => import('../views/home/info.vue')
+    component: () => import('../views/info/list.vue')
   },
   {
-    path: '/home/issue',
+    path: '/info/issue',
     name: 'issue',
-    component: () => import('../views/home/issue.vue')
+    component: () => import('../views/info/issue.vue')
   },
   {
-    path: '/home/checkclass',
+    path: '/info/checkclass',
     name: 'checkclass',
-    component: () => import('../views/home/checkclass.vue')
+    component: () => import('../views/info/checkclass.vue')
+  },
+  {
+    path: '/leave/list',
+    name: 'leave',
+    component: () => import('../views/leave/list.vue')
   },
   {
     path: '/user',
@@ -33,6 +38,11 @@ const routes = [
     path: '/myclass',
     name: 'myclass',
     component: () => import('../views/class/Class.vue')
+  },
+  {
+    path: '/class/detail',
+    name: 'class_detail',
+    component: () => import('../views/class/detail.vue')
   },
   {
     path: '/chat',
@@ -58,7 +68,23 @@ const routes = [
     path: '/chat/chatroom',
     name: 'chatroom',
     component: () => import('../views/chat/chatroom.vue')
-  }
+  },
+  //作业
+  {
+    path: '/homework/assign',
+    name: 'assign',
+    component: () => import('../views/homework/assign.vue')
+  },
+  {
+    path: '/homework/list',
+    name: 'homework_list',
+    component: () => import('../views/homework/list.vue')
+  },
+  {
+    path: '/homework/checkclass',
+    name: 'homework_checkclass',
+    component: () => import('../views/homework/checkclass.vue')
+  },
 ]
 
 const router = new VueRouter({

@@ -15,6 +15,18 @@
 				</div>
 			</div>
 		</div>
+		<div class="main">
+			<midHeader left="我创建的"></midHeader>
+			<div v-for="(item,index) in list" :key="index" @click="jump()">
+				<classpart v-if="item.type==='add'" :img="item.img" :myclass="item.myclass" :classNum="item.classNum" :numbers="item.numbers"></classpart>
+			</div>
+		</div>
+		<div class="main">
+			<midHeader left="我加入的"></midHeader>
+			<div v-for="(item,index) in list" :key="index" @click="jump()">
+				<classpart v-if="item.type==='enjoy'" :img="item.img" :myclass="item.myclass" :classNum="item.classNum" :numbers="item.numbers"></classpart>
+			</div>
+		</div>
 		<div style="height: 1rem;"></div>
 		<tabbar></tabbar>
 	</div>
@@ -23,11 +35,29 @@
 <script>
 	import tabbar from '../../components/Tabbar.vue';
 	import myheader from '../../components/Header.vue';
+	import midHeader from '../../components/midHeader.vue';
+	import classpart from '../../components/classpart.vue';
+	import datas from '../../../common/js/datas.js';
 	export default {
 		name: 'myclass',
+		data() {
+			return {
+				list: []
+			}
+		},
 		components: {
 			tabbar,
-			myheader
+			myheader,
+			classpart,
+			midHeader
+		},
+		methods:{
+			jump() {
+				this.$router.push('/class/detail')
+			}
+		},
+		created() {
+			this.list = datas.classList();
 		}
 	}
 </script>
@@ -72,7 +102,6 @@
 			.addClass {
 				display: flex;
 				flex-direction: column;
-				
 				align-items: center;
 				img {
 					width: 1.8rem;
@@ -81,5 +110,8 @@
 				}
 			}
 		}
+	}
+	.main {
+		margin-top: 0.6rem;
 	}
 </style>
