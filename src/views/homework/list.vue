@@ -4,7 +4,7 @@
 		<div class="list">
 			<div class="content" v-for="(item,index) in data" :key="index">
 				<div class="specific">
-					<infoIcon msg="作业" class="icon"></infoIcon>
+					<infoIcon msg="作业" color="blue" class="icon"></infoIcon>
 					<b>{{item.title}}</b>
 					<div class="main">
 						{{item.homework}}

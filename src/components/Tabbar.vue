@@ -66,5 +66,6 @@
 		}
 	};
 </script>
-<style>
+<style lang="less" scoped>
+	@import "../style/user/index.css";
 </style>

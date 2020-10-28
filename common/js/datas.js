@@ -54,7 +54,7 @@ export default {
 			},
 			{
 				id: 4,
-				img: '分析.png',
+				img: 'score.png',
 				name: '成绩'
 			},
 			{
@@ -64,7 +64,7 @@ export default {
 			},
 			{
 				id: 6,
-				img: '日历.png',
+				img: 'cal.png',
 				name: '打卡'
 			}
 		]
@@ -216,7 +216,7 @@ export default {
 			{
 				id: 5,
 				title: '11月07日的通知',
-				homework: '没了！准备做毕设吧！加油！',
+				homework: '我好累为什么那么多页面，怎么做都做不完，先做通知页面吧！',
 				myclass: '六年五班',
 				time: '2020-11-07'
 			}
